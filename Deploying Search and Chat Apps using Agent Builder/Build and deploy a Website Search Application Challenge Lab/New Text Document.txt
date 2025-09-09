@@ -1,0 +1,10 @@
+nano index.html
+
+gsutil mb -c standard -l us -b on gs://qwiklabs-gcp-01-c2d88e379459/
+
+gsutil iam ch allUsers:objectViewer gs://qwiklabs-gcp-01-c2d88e379459
+
+gsutil cp index.html gs://qwiklabs-gcp-01-c2d88e379459/
+
+https://storage.googleapis.com/qwiklabs-gcp-01-c2d88e379459/index.html
+
